@@ -1,0 +1,15 @@
+
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+  tester:
+    build: .
+    volumes:
+      - ./tests:/app/tests
+    command: >
+      sh -c "uv pip install --system --no-cache-dir '.[test]' && pytest"
