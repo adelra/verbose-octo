@@ -19,6 +19,7 @@ dependencies = [
 test = [
     "pytest",
     "requests",
+    "httpx",
 ]
 
 [tool.ruff]

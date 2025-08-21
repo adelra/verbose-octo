@@ -54,3 +54,11 @@ When deploying this model to a production environment, you should consider the f
 *   **Scalability:** The current setup runs a single container. To handle more traffic, you should consider deploying the application to a scalable platform like Kubernetes.
 *   **Monitoring:** You should set up monitoring and logging to track the performance of the model and the API.
 *   **Security:** You should secure the API by adding authentication and authorization.
+
+## Running the Tests
+
+To run the tests, you can use the `tester` service defined in the `docker-compose.yml` file.
+
+```bash
+docker-compose run tester
+```
