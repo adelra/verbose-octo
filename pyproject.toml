@@ -13,6 +13,8 @@ dependencies = [
     "ruff",
     "uvicorn",
     "python-multipart",
+    "albumentations",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]
@@ -20,6 +22,9 @@ test = [
     "pytest",
     "requests",
     "httpx",
+]
+dev = [
+    "ipykernel",
 ]
 
 [tool.ruff]

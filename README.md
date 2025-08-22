@@ -62,3 +62,30 @@ To run the tests, you can use the `tester` service defined in the `docker-compos
 ```bash
 docker-compose run tester
 ```
+
+## Running the Jupyter Notebook
+
+Before running the notebook, ensure the COCO dataset is downloaded to your local machine:
+
+1.  **Download COCO Dataset:**
+
+    ```bash
+    python scripts/download_coco.py
+    ```
+
+    This will download the dataset to your Hugging Face cache directory (`~/.cache/huggingface/datasets`).
+
+2.  **Start the Jupyter Lab container:**
+
+    ```bash
+    make notebook
+    ```
+
+    This will build the Docker image (if necessary) and start Jupyter Lab, accessible via your web browser.
+
+3.  **Access Jupyter Lab:**
+
+    Open your web browser and navigate to `http://localhost:8888`.
+    When prompted, enter `coco` as the password/token.
+
+    You can then open and run the `coco_dataset_analysis.ipynb` notebook located in the `notebooks/` directory.
