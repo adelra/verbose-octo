@@ -13,6 +13,8 @@ dependencies = [
     "ruff",
     "uvicorn",
     "python-multipart",
+    "albumentations",
+    "matplotlib",
     "opencv-python",
     "Pillow",
     "ImageHash",
@@ -23,6 +25,9 @@ test = [
     "pytest",
     "requests",
     "httpx",
+]
+dev = [
+    "ipykernel",
 ]
 
 [tool.ruff]
