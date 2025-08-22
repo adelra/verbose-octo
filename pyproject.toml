@@ -15,6 +15,9 @@ dependencies = [
     "python-multipart",
     "albumentations",
     "matplotlib",
+    "opencv-python",
+    "Pillow",
+    "ImageHash",
 ]
 
 [project.optional-dependencies]
