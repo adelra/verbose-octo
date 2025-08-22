@@ -13,6 +13,9 @@ dependencies = [
     "ruff",
     "uvicorn",
     "python-multipart",
+    "opencv-python",
+    "Pillow",
+    "ImageHash",
 ]
 
 [project.optional-dependencies]
