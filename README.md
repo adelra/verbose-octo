@@ -11,13 +11,22 @@ This project is a machine learning application that uses YOLOv8 for object detec
 
 To build and run the API, you need to have Docker and Docker Compose installed.
 
-1.  **Build and run the container:**
+1.  **Run the API:**
 
     ```bash
-    docker-compose up --build
+    make run
     ```
 
     The API will be available at `http://localhost:8000`.
+
+## API Documentation (Swagger)
+
+This FastAPI application automatically generates interactive API documentation using Swagger UI.
+
+1.  **Start the API:** Ensure the API is running using `make run`.
+2.  **Access Swagger UI:** Open your web browser and navigate to `http://localhost:8000/docs`.
+
+You can also access the raw OpenAPI specification (JSON format) at `http://localhost:8000/openapi.json`.
 
 ## API Usage
 
